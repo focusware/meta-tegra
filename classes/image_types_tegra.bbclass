@@ -263,6 +263,7 @@ tegraflash_create_flash_config_tegra194() {
         -e"s,APPSIZE,${ROOTFSPART_SIZE}," \
         -e"s,RECROOTFSSIZE,${RECROOTFSSIZE}," \
         -e"s,APPUUID,," \
+        -e"s,33554432,${TEGRAFLASH_SDCARD_SECTORS}," \
         > $destdir/flash.xml.in
 }
 
